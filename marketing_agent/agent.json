@@ -1,0 +1,30 @@
+{
+    "name": "MarketingIntelligenceAgent",
+    "role": "Market Analysis & RAG",
+    "description": "Generates market insights and stores them in a vector database for retrieval.",
+    "endpoint": "http://localhost:8003",
+    "capabilities": [
+        {
+            "name": "analyze_market",
+            "description": "Generate and store market insights for a specific property.",
+            "input_schema": {
+                "property_id": "string",
+                "property_data": "object"
+            },
+            "output_schema": {
+                "status": "string",
+                "insight_ids": "array"
+            }
+        },
+        {
+            "name": "query_market_data",
+            "description": "Query the RAG database for market insights.",
+            "input_schema": {
+                "query": "string"
+            },
+            "output_schema": {
+                "results": "array"
+            }
+        }
+    ]
+}

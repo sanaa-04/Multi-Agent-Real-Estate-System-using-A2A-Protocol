@@ -1,0 +1,22 @@
+{
+    "name": "CustomerOnboardingAgent",
+    "role": "Customer Data Collection",
+    "description": "Validates and stores customer information for the real estate platform.",
+    "endpoint": "http://localhost:8001",
+    "capabilities": [
+        {
+            "name": "onboard_customer",
+            "description": "Onboard a new customer by collecting their name, email, budget, and preferences.",
+            "input_schema": {
+                "name": "string",
+                "email": "string",
+                "budget": "number",
+                "preferences": "string"
+            },
+            "output_schema": {
+                "customer_id": "string",
+                "status": "string"
+            }
+        }
+    ]
+}

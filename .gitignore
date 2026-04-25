@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+*.db
+chroma_db/
+.gemini/
+.vscode/
+.idea/
+*.log

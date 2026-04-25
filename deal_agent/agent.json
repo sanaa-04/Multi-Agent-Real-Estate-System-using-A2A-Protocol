@@ -1,0 +1,21 @@
+{
+    "name": "DealOnboardingAgent",
+    "role": "Property Data Collection",
+    "description": "Collects and normalizes property data for the real estate platform.",
+    "endpoint": "http://localhost:8002",
+    "capabilities": [
+        {
+            "name": "onboard_deal",
+            "description": "Onboard a new property deal by collecting address, price, and details.",
+            "input_schema": {
+                "address": "string",
+                "price": "number",
+                "details": "string"
+            },
+            "output_schema": {
+                "property_id": "string",
+                "status": "string"
+            }
+        }
+    ]
+}

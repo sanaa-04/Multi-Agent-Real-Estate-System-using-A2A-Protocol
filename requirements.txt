@@ -1,0 +1,13 @@
+langchain
+langchain-ollama
+langgraph
+fastapi
+uvicorn
+chromadb
+pydantic
+httpx
+python-dotenv
+sqlalchemy
+pandas
+jupyter
+ipykernel
